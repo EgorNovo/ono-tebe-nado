@@ -50,26 +50,26 @@
 }
 
 .cover {
+  position: relative;
   z-index: 1;
   display: flex;
-  position: relative;
   flex-wrap: wrap;
   row-gap: 125px;
-  background-image: url(../images/cover.jpg);
-  background-position: center;
-  background-size: cover;
   color: #FFF;
   font-style: normal;
   text-transform: uppercase;
+  background-image: url(../images/cover.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  z-index: 1;
   width: 100%;
-  z-index: 1; 
+  height: 100%;
   opacity: 0.6;
   background: #000;
 }
@@ -91,16 +91,16 @@
   display: block;
 }
 
-.ono-cover-row-title { 
-  margin-right:100px; 
+.ono-cover-row-title {
+  margin-right:100px;
 }
 
 .tebe-cover-row-title {
-  margin-left:286px; 
+  margin-left:286px;
 }
 
 .nado-cover-row-title {
-  margin-left:583px; 
+  margin-left:583px;
 }
 
 .cover-row-title-offset {
@@ -134,7 +134,6 @@
   height: 51px;
   margin-bottom: 5px;
   border: 1px solid #FFF;
-  background: transparent;
   color: #FFF;
   font-weight: 400;
   font-size: 22px;
@@ -142,6 +141,7 @@
   line-height: normal;
   text-align: center;
   text-transform: uppercase;
+  background: transparent;
 }
 
 .lots {
@@ -172,9 +172,9 @@
 }
 
 .lots-card {
+  z-index: 0;
   background-position: center;
   background-size:cover;
-  z-index: 0;
 }
 
 .lots-film-card {
@@ -190,19 +190,19 @@
 }
 
 .lots-card-link {
+  position: relative;
   z-index: 2;
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 334px;
   width: 100%;
+  max-width: 334px;
   min-height: 563px;
 }
 
 .lots-card-link h3 {
-  margin: 51px 40px 0;
   z-index: 2;
+  margin: 51px 40px 0;
   color: #FFF;
   font-weight: 700;
   font-size: 22px;
@@ -245,12 +245,12 @@
 
 .about-logo {
   width: 240px;
-  background-image: url(../images/Ellipse\ 10.svg);
-  background-position: top;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: 64px 46.48px 0;
   margin: 35px 0 0 47px;
+  padding: 64px 46.48px 0;
+  text-align: center;
+  background-image: url(../images/Ellipse\ 10.svg);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .about-logo-white {
@@ -314,7 +314,7 @@
 .footer-social img {
   display: block;
   width: 48px;
-  height: 48px;   
+  height: 48px;
 }
 
 .footer-link-menu {
