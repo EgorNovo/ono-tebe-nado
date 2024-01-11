@@ -196,10 +196,11 @@
 .lots-card-link {
   z-index: 2;
   display: block;
-  margin: 51px 40px 0;
 }
 
 .lots-card-link h3{
+  margin: 51px 40px 0;
+  z-index: 2;
   color: #FFF;
   font-weight: 700;
   font-size: 22px;
